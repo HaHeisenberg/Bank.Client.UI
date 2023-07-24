@@ -17,6 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
+          repository: HaHeisenberg/BankProject.Shared
           submodules: true
       - name: Build And Deploy
         id: builddeploy
