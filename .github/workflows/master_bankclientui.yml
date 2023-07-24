@@ -24,7 +24,7 @@ jobs:
         with:
           repository: Haheisenberg/BankProject.Shared
           ref: master
-          path: BankProject.Shared
+          path: ../BankProject.Shared
         
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
@@ -33,7 +33,7 @@ jobs:
           include-prerelease: true
           
       - name: Restore workloads
-        run: dotnet workload restore --project ./Bank.Client.UI
+        run: dotnet workload restore
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
