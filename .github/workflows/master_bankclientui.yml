@@ -20,8 +20,9 @@ jobs:
           submodules: true
           
       - name: LS
-        run: cd 
-             ls
+        run: |
+              cd ..
+              ls
         
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
