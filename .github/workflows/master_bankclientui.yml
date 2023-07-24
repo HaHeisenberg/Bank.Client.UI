@@ -16,8 +16,6 @@ jobs:
     steps:
       - name: Checkout Client
         uses: actions/checkout@v3
-        with:
-          path: Bank.Client.UI
           
       - name: Checkout Shared Library
         uses: actions/checkout@v3
