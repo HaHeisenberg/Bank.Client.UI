@@ -16,9 +16,6 @@ jobs:
     steps:
       - name: Checkout Client
         uses: actions/checkout@v3
-        with:
-          submodules: true
-
         
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
@@ -28,6 +25,13 @@ jobs:
           
       - name: Restore workloads
         run: dotnet workload restore
+           
+      - name: Clone Shared
+        run: |
+              cd ..
+              git clone https://github.com/HaHeisenberg/BankProject.Shared
+              ls
+              cd Bank.Client.UI
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
