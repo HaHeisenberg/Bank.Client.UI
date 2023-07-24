@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include=".\BankProject.Shared\BankProject.Shared.csproj" />
+    <ProjectReference Include="..\BankProject.Shared\BankProject.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>
