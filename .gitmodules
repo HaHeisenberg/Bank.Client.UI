@@ -1,0 +1,3 @@
+[submodule "SharedLib"]
+	path = BankProject.Shared
+	url = git://github.com/HaHeisenberg/BankProject.Shared.git
