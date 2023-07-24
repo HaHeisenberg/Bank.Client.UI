@@ -1,0 +1,25 @@
+﻿@page "/user"
+@attribute [Authorize]
+<h3>UserDashboard</h3>
+
+<Bank.Client.UI.Components.ClaimsList/>
+
+@if(AccountList == null)
+{
+    <p><em>Loading ...</em></p>
+}
+else {
+    <div class="row">
+        @foreach (var account in AccountList)
+        {
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <AccountCard Account="account"></AccountCard>
+            </div>
+        }
+    </div>
+}
+
+
+@code {
+
+}

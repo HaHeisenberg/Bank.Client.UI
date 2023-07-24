@@ -1,0 +1,11 @@
+﻿@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using Bank.Client.UI.Components
+
+@inject NavigationManager NavigationManager
+@inject IAccessTokenProvider TokenProvider
+@page "/"
+
+
+<WelcomeComponent />
+
+<ClaimsList />
