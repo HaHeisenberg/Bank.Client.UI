@@ -33,7 +33,7 @@ jobs:
           include-prerelease: true
           
       - name: Restore workloads
-        run: dotnet workload restore
+        run: dotnet workload restore --project ./Bank.Client.UI
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
