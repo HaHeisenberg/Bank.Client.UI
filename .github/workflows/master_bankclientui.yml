@@ -22,7 +22,7 @@ jobs:
         with:
           repository: Haheisenberg/BankProject.Shared
           ref: master
-          path: ../BankProject.Shared
+          path: BankProject.Shared
         
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
