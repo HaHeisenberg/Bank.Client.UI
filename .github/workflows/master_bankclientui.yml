@@ -16,13 +16,11 @@ jobs:
     steps:
       - name: Checkout Client
         uses: actions/checkout@v3
-        with:
-          submodules: true
           
       - name: LS
         run: |
               cd ..
-              ls
+              git clone https://github.com/HaHeisenberg/BankProject.Shared
         
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
