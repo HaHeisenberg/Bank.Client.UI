@@ -11,27 +11,16 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
-      - name: Checkout Client
-        uses: actions/checkout@v3
-        
+      - uses: actions/checkout@v2
+
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '7.x'
+          dotnet-version: '3.1'
           include-prerelease: true
-          
-      - name: Restore workloads
-        run: dotnet workload restore
-           
-      - name: Clone Shared
-        run: |
-              cd ..
-              git clone https://github.com/HaHeisenberg/BankProject.Shared
-              ls
-              cd Bank.Client.UI
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
@@ -46,7 +35,7 @@ jobs:
           path: ${{env.DOTNET_ROOT}}/myapp
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build
     environment:
       name: 'Production'
@@ -64,5 +53,5 @@ jobs:
         with:
           app-name: 'BankClientUI'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9794AEA06ACD47A38E080E6EFDF07608 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2D01C62E6BC3408C83FE094CFB501C43 }}
           package: .
