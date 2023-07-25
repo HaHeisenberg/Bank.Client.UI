@@ -28,6 +28,7 @@ var accountsBaseAddress = "https://localhost:7000";
 //        + ":"
 //        + builder.Configuration.GetSection("Services").GetSection("Accounts").GetValue(typeof(string), "Port")
 //    : Environment.GetEnvironmentVariable("ACCOUNTS_API_ADDRESS");
+//test
 
 builder.Services.AddHttpClient<IAccountService, AccountService>(client =>
 {
