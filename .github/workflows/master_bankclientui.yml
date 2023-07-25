@@ -21,6 +21,16 @@ jobs:
         with:
           dotnet-version: '3.1'
           include-prerelease: true
+          
+      - name: Restore workloads
+        run: dotnet workload restore
+
+      - name: Clone Shared
+        run: |
+              cd ..
+              git clone https://github.com/HaHeisenberg/BankProject.Shared
+              ls
+              cd Bank.Client.UI
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
