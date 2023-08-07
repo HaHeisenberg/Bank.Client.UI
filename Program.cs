@@ -11,12 +11,18 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.AddOptions();
 builder.Services.AddAuthorizationCore();
 
-builder.Services.AddOidcAuthentication(options =>
+//builder.Services.AddOidcAuthentication(options =>
+//{
+//    builder.Configuration.Bind("AzureAuth", options.ProviderOptions);
+//    options.ProviderOptions.ResponseType = "code";
+//    options.ProviderOptions.AdditionalProviderParameters.Add("audience",
+//        "https://localhost:7000");
+//});
+
+builder.Services.AddMsalAuthentication(options =>
 {
-    builder.Configuration.Bind("Auth0", options.ProviderOptions);
-    options.ProviderOptions.ResponseType = "code";
-    options.ProviderOptions.AdditionalProviderParameters.Add("audience",
-        "https://localhost:7000");
+    builder.Configuration.Bind("AzureAd", options.ProviderOptions.Authentication);
+    options.ProviderOptions.DefaultAccessTokenScopes.Add("https://graph.microsoft.com/User.Read");
 });
 
 builder.Services.AddApiAuthorization();

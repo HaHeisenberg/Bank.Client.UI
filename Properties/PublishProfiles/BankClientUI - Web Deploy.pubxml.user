@@ -6,8 +6,8 @@ Ten plik jest wykorzystywany przez proces publikowania/pakowania projektu intern
 <Project>
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4aFzqt8j8EiWrIA7b4N2DgAAAAACAAAAAAAQZgAAAAEAACAAAAA8nsP7yBrAuq7fDx4cftvY63sYVPfijjdsTa+mox5EcAAAAAAOgAAAAAIAACAAAACpQgmEyS4JZ7sDyrtcUhOnS2KKuDWQOqBN23eTObvh9YAAAADoAYP0e12zL/PWXExBCiMK146HB1aP7KWCZXbNO4OOfUuAjciqVwCxBcWijZxITIDpU3rMV43elSWdwcQ0aFJsFCxV5tcY3lkEUjmS5qli2egFHhgmlTrlkliRlZVoLBEJoZsfai81TY0vbgIGWcb0EKzZpx1R/Nn9kDm9Bj2GG0AAAAB+4OiwsP9X0JKJqf+hgmeYzYkGgjbXUHUMbZru3eh4WzBi0KOBNgbrv8vAgCGTl8DkDf2dvZhpZNsJgdBFE1AL</EncryptedPassword>
-    <History>True|2023-07-25T10:35:38.6200594Z;</History>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4aFzqt8j8EiWrIA7b4N2DgAAAAACAAAAAAAQZgAAAAEAACAAAACMtR7FqK7fVjBX8sX24w+7OJR8hqgAF2U1DZwomVkb4gAAAAAOgAAAAAIAACAAAABm1MbLoSEJ1vsTdm+qpXDfGwxN8ECUO/mKH9gw7UOohYAAAACgCFk3FJpnJcInJQOcs2qbkwlDm9uo4jjid0z5ighxvualf0unx20S0pqAkQPXm+kRtun/xhvhZqdIdl/Az/k9+IgOYoygSRcKuhY9XV0ZgZ/NE7hNNFhmldkQ4tFcOyv+kUVgeeqHtWo2O1ILTOO1Y1RMhROaJ0a3OqC4311G7EAAAAC65lNwnfOu3TJvaXKSzvDAWSwoasBKP5dUFfqrrip2tii0lyDJH6BpH0rztvTU7ZBC/JxZVegokhICGHJBICxY</EncryptedPassword>
+    <History>True|2023-07-28T11:26:16.5023761Z;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>
